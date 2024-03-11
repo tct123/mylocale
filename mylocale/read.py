@@ -9,6 +9,7 @@ def read(
         csvreader = csv.DictReader(csvfile, delimiter=",")
         for item in csvreader:
             mylistforindex.append(item[stringname])
+            
 
         return mylistforindex
         
