@@ -1,1 +1,0 @@
-from TR import tr
