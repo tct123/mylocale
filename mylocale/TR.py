@@ -17,5 +17,5 @@ def tr(csv_file, target_key, langcode):
 if __name__ == "__main__":
     csv_file = "localisation.csv"
     target_key = "HELLOWORLD"
-    langcode = "dge_DE"
+    langcode = "en_En"
     print(tr(csv_file=csv_file,target_key=target_key,langcode=langcode))
