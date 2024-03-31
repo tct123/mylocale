@@ -7,6 +7,7 @@ authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
 readme = "README.md"
 repository = "https://github.com/tct123/mylocale"
 homepage = "https://github.com/tct123/mylocale"
+documentation = "https://mylocale.readthedocs.io"
 
 
 [tool.poetry.dependencies]
