@@ -15,7 +15,7 @@ def find_value(csv_file, target_value):
     #    return (row_idx + 1, col_idx + 1)  # Zeilen- und Spaltenindizes beginnen bei 1
     # except IndexError:
     #    return None
-    print(df.where(df == target_value))
+    print(df.where(df == target_value).stack())
 
 
 csv_file = "localisation.csv"  # Passe dies entsprechend deiner CSV-Datei an
