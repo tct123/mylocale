@@ -1,4 +1,4 @@
-from mylocale import tr
+from mylocale.TR import tr
 
 csv_file = "localisation.csv"
 target_key = "HELLOWORLD"
