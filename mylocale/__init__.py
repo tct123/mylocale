@@ -1,1 +1,1 @@
-from mylocale.TR import *
+from TR import tr
