@@ -1,1 +1,1 @@
-import read
+from TR import *
