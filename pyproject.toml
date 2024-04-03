@@ -12,6 +12,7 @@ documentation = "https://mylocale.readthedocs.io"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+babel = "^2.14.0"
 
 
 [build-system]
