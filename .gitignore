@@ -152,3 +152,4 @@ cython_debug/
 #.idea/
 mylocale/.~lock.localisation.csv\#
 *.csv#
+.vscode/settings.json
