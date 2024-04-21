@@ -16,5 +16,5 @@ dev = ["freezegun (>=1.0,<2.0)", "pytest (>=6.0)", "pytest-cov"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.11"
-content-hash = "79a15942fcc06c3f756364273d7e1f97d466351736e6ed3618a138eca7ee937e"
+python-versions = "^3.10"
+content-hash = "6ea901bff19a2291f39e2a2fad4a6b921ca199b8afebabc2e8f4357cf47a3811"
