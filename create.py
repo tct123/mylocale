@@ -1,4 +1,4 @@
-def create():
+def main():
     name = "localisation.csv"
     string = "stringname,en_EN\nHELLOWORLD,Hello World"
     with open(file=name, mode="w") as f:
@@ -7,4 +7,4 @@ def create():
 
 
 if __name__ == "__main__":
-    create()
+    main()
