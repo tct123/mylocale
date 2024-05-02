@@ -1,6 +1,3 @@
-import click
-
-@click.command()
 def create():
     name = "localisation.csv"
     string = "stringname,en_EN\nHELLOWORLD,Hello World"
@@ -8,5 +5,6 @@ def create():
         f.write(string)
     print(f"created {name} successfully")
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     create()
