@@ -4,5 +4,5 @@ def create():
     with open(file="localisation.csv", mode="w") as f:
         f.write(string)
 
-
-create()
+if __name__ == "__main__":
+    create()
