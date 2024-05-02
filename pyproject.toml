@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mylocale"
-version = "0.16.0"
+version = "0.17.0"
 description = "A simple python library for simple localisation wit CSV files."
 license = "MIT"
 authors = ["tct123 <42028373+tct123@users.noreply.github.com>"]
@@ -21,4 +21,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-arg_script = 'create:create' # run start() function from ./args.py
+mylocale_create = 'create:create' # run start() function from ./args.py
