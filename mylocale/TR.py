@@ -15,9 +15,11 @@ def tr(
         if item["stringname"] == target_key:
             try:
                 if item[langcode] == "":
+                    f.close()
                     return item["en_EN"]
                 else:
+                    f.close()
                     return item[langcode]
             except:
+                f.close()
                 return item["en_EN"]
-    f.close()
