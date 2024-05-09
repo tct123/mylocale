@@ -11,6 +11,7 @@ def tr(
 ):
     f = open(csv_file, newline="")
     locale_csv = csv.DictReader(f=f, delimiter=",")
+    f.close()
     for item in locale_csv:
         if item["stringname"] == target_key:
             try:
