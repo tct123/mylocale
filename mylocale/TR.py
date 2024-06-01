@@ -1,5 +1,5 @@
 import csv
-from babel import default_locale
+import locale
 
 
 def tr(
@@ -7,7 +7,7 @@ def tr(
     target_key,
     varnames: list = [],
     vars: list = [],
-    langcode=default_locale(),
+    langcode=locale.getlocale(),
 ):
     f = open(csv_file, newline="")
     locale_csv = csv.DictReader(f=f, delimiter=",")
