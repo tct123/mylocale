@@ -5,10 +5,8 @@ import locale
 def tr(
     csv_file,
     target_key,
-    varnames: list = [],
-    vars: list = [],
-    langcode=locale.getlocale(),
-):
+    langcode=locale.getlocale()[0].split("_")[0],
+) -> str:
     f = open(csv_file, newline="")
     locale_csv = csv.DictReader(f=f, delimiter=",")
     for item in locale_csv:
@@ -16,10 +14,10 @@ def tr(
             try:
                 if item[langcode] == "":
                     f.close()
-                    return item["en_EN"]
+                    return item["en"]
                 else:
                     f.close()
                     return item[langcode]
             except:
                 f.close()
-                return item["en_EN"]
+                return item["en"]
