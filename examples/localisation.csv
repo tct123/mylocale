@@ -1,4 +1,4 @@
-stringname,en_EN,de_DE
+stringname,en,de
 HELLOWORLD,Hello World,Hallo Welt
 EXIT,Exit,Beenden
 TEXTVARS,%VAR1 added with %VAR2 is %VAR3,%VAR1 addiert mit %VAR2 ist gleich %VAR3
