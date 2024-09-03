@@ -1,4 +1,4 @@
-from mylocale.TR import tr
+from mylocale import tr
 
 var1 = 1
 var2 = 2
