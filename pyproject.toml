@@ -1,6 +1,6 @@
 [project]
 name = "mylocale"
-version = "2025.1.1"
+version = "2025.1.15"
 description = "A simple python library for simple localisation wit CSV files."
 license = "MIT"
 authors = [
