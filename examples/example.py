@@ -1,5 +1,7 @@
-from mylocale.TR import tr
+from mylocale import tr
+import locale
 
-csv_file = "localisation.csv"
+langcode=locale.getlocale()[0].split("_")[0]
+csv_file = "examples/localisation.csv"
 target_key = "HELLOWORLD"
 print(tr(csv_file=csv_file, target_key=target_key))
