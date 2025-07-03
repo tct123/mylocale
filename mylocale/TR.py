@@ -4,6 +4,7 @@ import locale
 
 # TODO: add rtl support
 def check_rtl(langcode):
+    print("This is experimental")
     rtl_langcodes = []
     if langcode in rtl_langcodes:
         return True
@@ -14,7 +15,7 @@ def check_rtl(langcode):
 def tr(csv_file, target_key, langcode):
     f = open(csv_file, newline="")
     locale_csv = csv.DictReader(f=f, delimiter=",")
-    print(locale_csv.fieldnames)
+    # print(locale_csv.fieldnames)
     for item in locale_csv:
         if item["stringname"] == target_key:
             try:
