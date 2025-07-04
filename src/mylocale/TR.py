@@ -2,28 +2,33 @@ import csv
 import locale
 
 
-# TODO: add rtl support
-def check_rtl(langcode):
-    print("This is experimental")
-    rtl_langcodes = ["ar", "he", "fa", "ur", "ps", "ku", "dv", "yi", "sd", "kmr"]
-    if langcode in rtl_langcodes:
-        return True
-    else:
-        return False
+class TR:
+    def __init__(self, langcode, csv_file):
+        self.langcode = langcode
+        self.csv_file = csv_file
+        self.f = open(csv_file, newline="")
+        self.locale_csv = csv.DictReader(f=self.f, delimiter=",")
 
+    # TODO: add rtl support
+    def check_rtl(langcode):
+        print("This is experimental")
+        print(self.locale_csv)
+        rtl_langcodes = ["ar", "he", "fa", "ur", "ps", "ku", "dv", "yi", "sd", "kmr"]
+        if langcode in rtl_langcodes:
+            return True
+        else:
+            return False
 
-def tr(csv_file, target_key, langcode):
-    f = open(csv_file, newline="")
-    locale_csv = csv.DictReader(f=f, delimiter=",")
-    for item in locale_csv:
-        if item["stringname"] == target_key:
-            try:
-                if item[langcode] == "":
-                    f.close()
+    def tr(self, target_key, langcode):
+        for item in self.locale_csv:
+            if item["stringname"] == target_key:
+                try:
+                    if item[langcode] == "":
+                        self.f.close()
+                        return item["en"]
+                    else:
+                        self.f.close()
+                        return item[langcode]
+                except:
+                    self.f.close()
                     return item["en"]
-                else:
-                    f.close()
-                    return item[langcode]
-            except:
-                f.close()
-                return item["en"]
