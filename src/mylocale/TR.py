@@ -3,7 +3,7 @@ import locale
 
 
 class TR:
-    def __init__(self, langcode, csv_file):
+    def __init__(self, langcode: str, csv_file: str):
         self.langcode = langcode
         self.csv_file = csv_file
         self.f = open(csv_file, newline="")
@@ -11,7 +11,7 @@ class TR:
         self.csv_langcodes = self.locale_csv.fieldnames
 
     # TODO: add rtl support
-    def check_rtl(langcode):
+    def check_rtl(langcode: str):
         print("This is experimental")
         # print(self.locale_csv)
         rtl_langcodes = ["ar", "he", "fa", "ur", "ps", "ku", "dv", "yi", "sd", "kmr"]
@@ -20,7 +20,7 @@ class TR:
         else:
             return False
 
-    def tr(self, target_key, langcode):
+    def tr(self, target_key, langcode: str):
         for item in self.locale_csv:
             if item["stringname"] == target_key:
                 try:
