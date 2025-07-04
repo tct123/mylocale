@@ -8,11 +8,12 @@ class TR:
         self.csv_file = csv_file
         self.f = open(csv_file, newline="")
         self.locale_csv = csv.DictReader(f=self.f, delimiter=",")
+        print(self.locale_csv.restkey)
 
     # TODO: add rtl support
     def check_rtl(langcode):
         print("This is experimental")
-        print(self.locale_csv)
+        # print(self.locale_csv)
         rtl_langcodes = ["ar", "he", "fa", "ur", "ps", "ku", "dv", "yi", "sd", "kmr"]
         if langcode in rtl_langcodes:
             return True
