@@ -10,9 +10,7 @@ class TR:
         self.locale_csv = csv.DictReader(f=self.f, delimiter=",")
         self.csv_langcodes = self.locale_csv.fieldnames
 
-    # TODO: add rtl support
     def check_rtl(langcode: str):
-        print("This is experimental")
         # print(self.locale_csv)
         rtl_langcodes = ["ar", "he", "fa", "ur", "ps", "ku", "dv", "yi", "sd", "kmr"]
         if langcode in rtl_langcodes and langcode in self.locale_csv.fieldnames:
