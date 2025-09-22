@@ -1,4 +1,4 @@
-from mylocale import tr
+from mylocale import TR
 import locale
 
 langcode = locale.getlocale()[0].split("_")[0]

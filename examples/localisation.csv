@@ -2,3 +2,4 @@ stringname,en,de,ar
 HELLOWORLD,Hello World,Hallo Welt,مرحبا بالعالم
 EXIT,Exit,Beenden,مخرج
 TEXTVARS,{var1} added with {var2} is {var3},{var1} addiert mit {var2} ist gleich {var3},تمت إضافة {var1} مع {var2} وهو {var3}
+TEXTVARS2,{var1} added with {var2} is {var3},{var1} addiert mit {var2} ist gleich {var3},تمت إضافة {var1} مع {var2} وهو {var3}
